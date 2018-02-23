@@ -14,25 +14,18 @@
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
-
-# Inherit telephony stuff
-$(call inherit-product, vendor/aicp/config/telephony.mk)
-
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Ali Al-Asadi (alial04)"
+# Inherit some common stuff.
+$(call inherit-product, vendor/aosvp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
--include vendor/aicp/configs/bootanimation.mk
+-include vendor/aosvp/configs/bootanimation.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
-PRODUCT_NAME := aicp_athene
+PRODUCT_NAME := aosvp_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
