@@ -29,3 +29,6 @@ PRODUCT_NAME := aosvp_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
+
+#export ViperOS-AOSVP
+AOSVP_BUILD_TYPE=BETA
